@@ -27,7 +27,7 @@ for t_max, d in data:
     t1, t2 = roots(t_max, d)
     t1 = math.ceil(t1)
     t2 = math.floor(t2)
-    cul *= len(range(t1, t2+1))
+    cul *= (t2+1-t1)
 
 print(cul)
 
